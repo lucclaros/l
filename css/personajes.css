@@ -31,15 +31,37 @@ p{
 }
 .personajes1{
     display: flex;
-    justify-content: space-between;
     text-align: center;
 }
 .personajes2{
     display: flex;
-    justify-content: space-between;
     text-align: center;
 }
-.asd{
-    margin-right: 70%;
-    margin-left: 3%;
+.personajes3{
+    margin-left: 5%;
+}
+
+.personajes1 div{
+    padding: 2%;
+}
+.personajes1 div img{
+    width: 70%;
+}
+.personajes2 div{
+    padding: 2%;
+}
+.personajes2 div img{
+    width: 70%;
+}
+.personajes3 div{
+    width: 33%;
+    padding: 2%;
+}
+.personajes3 div img{
+    width: 60%;
+}
+
+.arreglar img{
+    width: 60%;
+    height: 50%;
 }
