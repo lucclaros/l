@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/contacto.css">
     <title>LOS JUEGOS DEL CALAMAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Lora:wght@500&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
         <div>
-            <a href="index.html"><img src="images/c.png" alt="Logo Squid Games"></a> 
+            <a href="index.html"><img src="images/c.png" style="max-width: 100%;
+                height: auto" alt="Logo Squid Games"></a> 
         </div>
         <nav id="navegador">
             <ul>
@@ -17,32 +21,47 @@
                 <li><a href="personajes.html">Personajes</a></li>
                 <li><a href="informacion.html">Informacion</a></li>
                 <li><a href="criticas.html">Criticas</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="trailer.html">Trailer</a></li>
             </ul>
         </nav>
     </header>   
+    <div class="form-contacto">
+            <form action="">
+                <div class = "row">
+                    <h3>Desea contactarnos?</h3>
+                    <div class="col">
+                        <label for="iname">Nombre:</label>
+                        <input id ="name" type="text" name="name">
+                    </div>
 
-    <h3>Deseas contactarnos?</h3>
-    <br>
-    <form action="" method="post">
-        <label for="iname">Nombre:</label>
-        <input id ="name" type="text" name="name">
-        <br>
-        <label for="isurname">Apellido:</label>
-        <input id= "isurname" type="text" name="surname">
-        <br>
+                    <br>
 
-        <label for="email">Email:</label>
-        <input type="iemail" type="email" name="email">
+                    <div class="col">
+                        <label for="isurname">Apellido:</label>
+                        <input id= "isurname" type="text" name="surname">
+                    </div>
 
-        <br><br>
-        <label>Envianos tu mensaje: </label>
-        <br>
-        <textarea rows="15" cols="30"></textarea>
+                    <br>
 
-        <br><br>
+                    <div class="col">
+                        <label for="email" style="margin-right: 10px; margin-left: 5px;">Email:</label>
+                        <input type="iemail" type="email" name="email">
+                    </div>
 
-        <input type="submit" value="Enviar">
+                    <br><br>
+                    
+                    <label>Envianos tu mensaje: </label>
+                    <br>
+                    <textarea rows="15" cols="45"></textarea>
 
-    </form>
+                    <br><br>
+                </div>
+                <input type="submit" value="Enviar" style="background-color: white;">
+        </form>
+    </div>
+    <footer>
+        <p>Lucas Claros Villaroel Copyright © Todos los derechos reservados - <a href="contacto.html">Contact us / Contacta con nosotros</a></p>
+    </footer>
 </body>
 </html>

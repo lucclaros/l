@@ -13,12 +13,6 @@ nav ul li a{
     text-transform: uppercase;
     color: #ffffff;
 }
-h2{
-    display:block;
-    color:#e1dceb;
-    padding-left: 420px;
-    font-family: 'Fira Sans', sans-serif;
-}
 header{
     margin-top: 2%;
     margin-right: 7%;
@@ -27,20 +21,6 @@ header{
     display: flex;
     justify-content: space-between;
     font-family: 'Fira Sans', sans-serif;
-}
-.criticas{
-    color: #c4b5d1;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 0.8vw
-}
-.reseñas{
-    color: #ffffff;
-}
-a{
-    color: #ffffff;
-}
-h3{
-    color: #ffffff;
 }
 footer{
     height: 25%;
@@ -55,11 +35,21 @@ footer p{
 footer a{
     color: #ffffff;
 }
-.premiosganados{
-    display:flex;
-    justify-content:space-between;
+.galeria1{
+    display: inline;
+    justify-content: space-between;
+    margin-left: 25px;
 }
-.premiosganados img{
-    width: 35%;
-    padding: 15px;
+.galeria1 img{
+    width: 25%;
+    padding: 25px;  
+}
+.galeria2{
+    display: inline;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+.galeria2 img{
+    width: 25%;
+    padding: 25px;  
 }

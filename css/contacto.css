@@ -1,5 +1,10 @@
 body{
     background-color: #000000;
+    background-image: url('../images/contacto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 nav ul{
     margin-top: 7%;
@@ -8,7 +13,7 @@ nav ul li{
     display: inline-block;
 }
 nav ul li a{
-    font-size: 1.2rem;
+    font-size: 1vw;
     padding-right: 2rem;
     text-transform: uppercase;
     color: #ffffff;
@@ -20,10 +25,59 @@ header{
     margin-left: 7%;
     display: flex;
     justify-content: space-between;
+    font-family: 'Fira Sans', sans-serif;
 }
 form{
     color: #ffffff;
 }
 h3{
     color: #ffffff;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+}
+footer{
+    height: 25%;
+    justify-content: space-around;
+    height: 100px;
+    text-align: center;
+}
+footer p{
+  color: #ffffff;
+  font-size:0.8vw
+}
+footer a{
+    color: #ffffff;
+}
+
+.form-contacto {
+    background-color: #201212;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 25px;
+    width: 400px;
+    font-size: 0.8vw;
+}
+.form-contacto input{
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #201212;
+    border: 1px solid #772828;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .row {
+        
+        grid-template-columns: auto auto;
+        
+    }
+}
+@media only screen and (max-width: 600px) {
+    .row {
+        grid-template-columns: auto;
+        
+    }
 }
