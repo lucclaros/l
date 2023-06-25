@@ -12,6 +12,7 @@ nav ul li a{
     padding-right: 2rem;
     text-transform: uppercase;
     color: #ffffff;
+    text-decoration: none;
 }
 h2{
     display:block;
@@ -62,4 +63,38 @@ footer a{
 .premiosganados img{
     width: 35%;
     padding: 15px;
+}
+
+nav ul li a:hover{
+    color: #e93ca1;
+}
+#navegador{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#navegador ul li{
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+#navegador ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#000000;
+    padding:0;
+}
+#navegador ul ul li {
+    float:none;
+    width:150px
+}
+#navegador ul li:hover > ul {
+    display:block;
+}
+#navegador ul ul a {
+    line-height:120%;
+    padding:10px 15px;
 }

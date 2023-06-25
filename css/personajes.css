@@ -12,6 +12,10 @@ nav ul li a{
     padding-right: 2rem;
     text-transform: uppercase;
     color: #ffffff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #e93ca1;
 }
 h2{
     display:block;
