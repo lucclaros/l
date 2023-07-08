@@ -8,7 +8,7 @@ nav ul li{
     display: inline-block;
 }
 nav ul li a{
-    font-size: 1vw;
+    font-size: 100%;
     padding-right: 2rem;
     text-transform: uppercase;
     color: #ffffff;
@@ -17,11 +17,7 @@ nav ul li a{
 nav ul li a:hover{
     color: #e93ca1;
 }
-h2{
-    display:block;
-    color:#e1dceb;
-    padding-left: 420px;
-}
+
 header{
     margin-top: 2%;
     margin-right: 7%;
@@ -38,7 +34,6 @@ aside{
 }
 .personajes img{
     width: 15%;
-    max-width: 100%; 
     float: left;
     margin-right: 15px;
 }
@@ -68,4 +63,70 @@ footer a{
 .imagen img{
     max-width: 100%;
     height: auto
+}
+.arreglar{
+    margin: 20px;
+    background-color: #0c0a0b;
+    color: #000000;
+    padding: 15px;
+}
+header.div.contenedor{
+    place-content: flex-start;
+}
+header.div.contenedor{
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+}
+#menu, #menu-check{
+    display: none;
+}
+@media screen and (max-width: 480px){
+
+    aside{
+        color: #d8b2b2;
+        font-size:100%
+    }
+    .personajes img{
+        width: 45%;
+        float: none;
+        margin-left: 25%;
+    }
+    footer p{
+        font-size: 90%;
+    }
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+        
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+    
+    #menu{
+        display: block;
+        color: #ffffff;
+        font-weight: bold;
+        position: absolute;
+        right: 0.5em;
+        font-size: 2.2em;
+        
+    }
+    #menu-cerrar{
+        display: none;
+    }
+    header div.contenedor nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        background-color: #000000;
+    }
+    header div.contenedor nav ul, header div.contenedor nav ul li{
+        display: block;
+        text-align: left;
+    }
+
 }

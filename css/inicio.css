@@ -10,7 +10,7 @@ nav ul li{
     display: inline-block;
 }
 nav ul li a{
-    font-size: 1vw;
+    font-size: 100%;
     padding-right: 2rem;
     text-transform: uppercase;
     color: #ffffff;
@@ -123,4 +123,69 @@ nav ul li a:hover{
 #navegador ul ul a {
     line-height:120%;
     padding:10px 15px;
+}
+header.div.contenedor{
+    place-content: flex-start;
+}
+header.div.contenedor{
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+}
+#menu, #menu-check{
+    display: none;
+}
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 100%;
+    }
+    p{
+        font-size: 90%;
+    }
+    footer p{
+        font-size: 90%;
+    }
+    h3{
+        font-size: 90%;
+    }
+    .contac{
+        font-size: 90%;
+    }
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+        
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+    
+    #menu{
+        display: block;
+        color: #ffffff;
+        font-weight: bold;
+        position: absolute;
+        right: 0.5em;
+        font-size: 2.2em;
+        
+    }
+    #menu-cerrar{
+        display: none;
+    }
+    header div.contenedor nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        background-color: #000000;
+    }
+    header div.contenedor nav ul, header div.contenedor nav ul li{
+        display: block;
+        text-align: left;
+    }
+    #navegador ul li:hover > ul {
+        display:none;
+    }
+
 }

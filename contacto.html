@@ -11,27 +11,34 @@
 </head>
 <body>
     <header>
-        <div>
+        <div id="contenedor">
             <a href="index.html"><img src="images/c.png" style="max-width: 100%;
                 height: auto" alt="Logo Squid Games"></a> 
-        </div>
-        <nav id="navegador">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="informacion.html">Informacion</a></li>
-                <li><a href="personajes.html">Personajes</a>
-                    <ul>
-                        <li><a href="personajes.html#seong">Seong Gi-hun</a></li>
-                        <li><a href="personajes.html#sangwoo">Sang-woo</a></li>
-                        <li><a href="personajes.html#saebyeok">Sae-byeok</a></li>
-                    </ul>
-                </li>
 
-                <li><a href="criticas.html">Criticas</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="trailer.html">Trailer</a></li>
-            </ul>
-    </nav>
+                <input type="checkbox" id="menu-check">
+                <label id="menu" for="menu-check">
+                    <span id="menu-abrir" style="color: #ffff;">&#9776</span>
+                    <span id="menu-cerrar" style="color: #ffff;">X</span>
+                </label>
+        
+            <nav id="navegador">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Informacion</a></li>
+                    <li><a href="personajes.html">Personajes</a>
+                        <ul>
+                            <li><a href="personajes.html#seong">Seong Gi-hun</a></li>
+                            <li><a href="personajes.html#sangwoo">Sang-woo</a></li>
+                            <li><a href="personajes.html#saebyeok">Sae-byeok</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="criticas.html">Criticas</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="trailer.html">Trailer</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>   
     <div class="form-contacto">
             <form action="">
